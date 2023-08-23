@@ -1,3 +1,75 @@
+html {
+    overflow-x: hidden;
+}
+
+.button {
+    width: 200px;
+    height: 60px;
+    position: absolute;
+    top: 2%;
+    right: 5%;
+    background: #fff;
+    margin: 30px auto;
+    box-sizing: border-box;
+    cursor: pointer;
+    text-align: center;
+    line-height: 60px;
+}
+
+.button::before {
+    content: '';
+    width: 0;
+    height: 0;
+    background: #00adb5;
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    z-index: 0;
+    transition: width .5s, height .5s;
+}
+
+.button::after {
+    content: '';
+    width: 0;
+    height: 0;
+    background: #00adb5;
+    position: absolute;
+    bottom: -1px;
+    left: -1px;
+    z-index: 0;
+    transition: width .5s, height .5s;
+}
+
+.button:hover::after {
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+}
+
+.button:hover::before {
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+}
+
+.button__content {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    background: #fff;
+}
+
+#app {
+    width: 100vw;
+    height: 100%;
+    border: 1px solid #ccc;
+    background-image: linear-gradient(to right, #f0f0f0 1px, transparent 1px),
+    linear-gradient(to bottom, #f0f0f0 1px, transparent 1px);
+    background-size: 5px 5px;
+    background-repeat: repeat;
+}
+
 h1 {
     font-size: 30px;
     margin: 50px auto 0;
@@ -10,16 +82,16 @@ h1 {
 }
 
 .main-ul {
-    border: 1px solid red;
     margin-top: 50px;
     padding: 0 100px;
 }
 
 .main-ul-li {
-
+    margin-bottom: 30px;
 }
 
 h2 {
+    margin-bottom: 10px;
     font-size: 18px;
     font-weight: 800;
     color: #663399;
@@ -34,7 +106,6 @@ h2 {
 }
 
 .content-1 {
-    border: 1px solid red;
     padding: 10px 0 0 0;
 }
 
@@ -46,7 +117,7 @@ h2 {
 
 .content-1-ul-li {
     width: 30%;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 h3 {
@@ -64,7 +135,6 @@ h3 {
 }
 
 .content-2 {
-    border: 1px solid red;
     padding: 10px 0 0 0;
 }
 
@@ -75,7 +145,7 @@ h3 {
 .content-2-ul-li {
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     font-size: 15px;
     font-weight: 500;
     color: rgba(96, 94, 98, 0.74);
@@ -87,7 +157,6 @@ h3 {
 }
 
 .content-3 {
-    border: 1px solid red;
     padding: 10px 0 0 0;
 }
 
@@ -96,7 +165,6 @@ h3 {
 }
 
 .content-3-ul-li {
-    border: 1px solid red;
     margin-bottom: 10px;
 }
 
@@ -115,6 +183,31 @@ h3 {
 }
 
 .content-3-ul-li-eyeshadow {
+    margin-left: 35px;
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    color: rgba(96, 94, 98, 0.74);
+    line-height: 30px;
+}
+
+.content-4 {
+    padding: 10px 0 0 0;
+}
+
+.content-4-ul {
+    position: relative;
+}
+
+.content-4-ul-li {
+    background-color: #fff;
+    margin-bottom: 30px;
+    padding: 10px 0;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgba(119, 116, 116, 0.26);
+}
+
+.content-4-ul-li-eyeshadow {
     margin-left: 35px;
     margin-top: 10px;
     font-size: 15px;
