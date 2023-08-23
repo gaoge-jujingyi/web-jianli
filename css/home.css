@@ -20,7 +20,7 @@ html {
     content: '';
     width: 0;
     height: 0;
-    background: #00adb5;
+    background: #663399;
     position: absolute;
     top: -1px;
     right: -1px;
@@ -32,7 +32,7 @@ html {
     content: '';
     width: 0;
     height: 0;
-    background: #00adb5;
+    background: #663399;
     position: absolute;
     bottom: -1px;
     left: -1px;
