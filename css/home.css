@@ -170,11 +170,11 @@ h3 {
 
 .content-3-ul::before {
     content: '';
-    height: 100%;
+    height: 70%;
     border: 1px dashed #663399;
     position: absolute;
     left: 0.7%;
-    top: 0;
+    top: 5%;
     z-index: -1;
 }
 
@@ -202,9 +202,19 @@ h3 {
 .content-4-ul-li {
     background-color: #fff;
     margin-bottom: 30px;
-    padding: 10px 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
     border-radius: 10px;
     box-shadow: 1px 1px 10px rgba(119, 116, 116, 0.26);
+}
+
+.content-4-ul-li-tag{
+    font-size: 15px;
+    font-weight: 500;
+    color: rgba(96, 94, 98, 0.74);
+    margin-left: 35px;
+    line-height: 30px;
 }
 
 .content-4-ul-li-eyeshadow {
@@ -214,4 +224,5 @@ h3 {
     font-weight: 500;
     color: rgba(96, 94, 98, 0.74);
     line-height: 30px;
+    padding-right: 10px;
 }
